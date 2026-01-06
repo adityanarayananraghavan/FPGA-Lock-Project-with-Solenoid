@@ -52,7 +52,7 @@ This file contains the Verilog HDL implementation of the password lock FSM.
 This file defines the physical pin mapping between FPGA pins and external hardware components.
 
 **Key Details**
-- Clock and button inputs mapped with internal pull-up resistors  
+- Clock and button inputs mapped with internal pull-up   
 - Outputs assigned for RGB LEDs, buzzer, and relay  
 - Ensures correct FPGA-to-hardware interfacing  
 

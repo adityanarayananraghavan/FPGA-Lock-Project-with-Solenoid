@@ -65,7 +65,7 @@ This file defines the physical pin mapping between FPGA pins and external hardwa
 | LOCKED   | Red LED ON     | OFF   | OFF    |
 | INPUT    | Blue LED ON    | OFF   | OFF    |
 | ERROR    | Blue LED ON    | OFF   | ON     |
-| UNLOCKED | Green LED ON   | ON    | OFF    |
+| UNLOCKED | Green LED ON   | ON    | ON    |
 
 ---
 

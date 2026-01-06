@@ -2,21 +2,25 @@
 # VSDFPGA Lock Project
 
 ## Overview
-The **VSDFPGA Lock Project** is a digital password-based locking system implemented using Verilog HDL and designed for FPGA deployment. The system uses a Finite State Machine (FSM) to control password entry, verification, error handling, and lock/unlock functionality. User interaction is handled through push buttons, while system status is indicated using LEDs, a buzzer, and a relay output.
 
-This project demonstrates fundamental FPGA design concepts such as FSM-based control logic, synchronous digital design, and hardware pin constraint mapping.
+The **VSDFPGA Lock Project** is a digital password-based locking and unlocking system implemented using **Verilog HDL** and designed for **FPGA deployment**. The system is built around a **Finite State Machine (FSM)** to handle password entry, verification, error detection, unlock timing, and reset control.
+
+User interaction is performed through push buttons, while system status and feedback are provided via **RGB LEDs**, a **buzzer**, and a **relay output** connected to a **solenoid lock**.
+
+This project demonstrates fundamental FPGA design principles such as FSM-based control logic, synchronous design, input handling, and hardware pin constraint mapping. Upon correct password entry, the lock unlocks and automatically resets back to the locked state after a fixed duration.
+
 
 ---
 
 ## Features
-- FSM-based digital password lock  
-- Multi-step password entry mechanism  
-- Push-button based user input  
+- FSM-based password lock and unlock mechanism  
+- Multi-step password entry process  
+- Push-button controlled inputs  
 - Visual feedback using RGB LEDs  
 - Audible feedback using a buzzer  
-- Relay control for external locking mechanism  
-- Active-LOW relay logic  
-- Reset and error handling support  
+- Relay-based control for external locking hardware  
+- Active-LOW relay control logic  
+- System reset and error handling support  
 
 ---
 
@@ -40,11 +44,11 @@ This file contains the Verilog HDL implementation of the password lock FSM.
 - `relay_ctrl` – Controls the external lock (active LOW)  
 
 **Operation**
-- The FSM advances through password entry states sequentially  
-- Entered bits are compared with a predefined password  
-- Correct password transitions the system to the `UNLOCKED` state  
-- Incorrect password triggers an `ERROR` state with buzzer activation  
-- Relay output is enabled when the lock is unlocked  
+- FSM progresses through multiple password entry states  
+- User-entered bits are compared against a predefined password  
+- Correct password transitions the system to the **UNLOCKED** state  
+- Incorrect entry moves the system to an **ERROR** state with buzzer activation  
+- Relay is enabled when the lock is successfully unlocked  
 
 ---
 
@@ -71,11 +75,11 @@ This file defines the physical pin mapping between FPGA pins and external hardwa
 
 ## Applications
 - FPGA-based electronic locking systems  
-- Access control and security systems  
+- Access control and security solutions  
 - Educational projects for learning Verilog and FSM design  
-- Embedded and digital system prototyping  
+- Embedded systems and digital design demonstrations  
 
 ---
 
 ## Conclusion
-The **VSDFPGA Lock Project** is a practical FPGA-based security system that demonstrates FSM-driven control, structured Verilog design, and real-world hardware interfacing.
+The **VSDFPGA Lock Project** is a practical FPGA-based security system showcasing FSM-driven control, structured Verilog design, and real-world hardware interfacing. It provides a strong foundation for understanding and extending FPGA-based control and security applications.

@@ -1,0 +1,17 @@
+# Clock
+set_io hw_clk 20
+
+# Buttons (Pin number then pullup attribute)
+set_io -pullup yes btn_toggle 11
+set_io -pullup yes btn_enter 12
+set_io -pullup yes btn_next 13
+set_io -pullup yes btn_reset 18
+
+# LEDs
+set_io led_red 39
+set_io led_green 40
+set_io led_blue 41
+
+# Others
+set_io buzzer 19
+set_io relay_ctrl 21
